@@ -1,8 +1,11 @@
 const mongoose = require("mongoose");
 
+const uri =
+  "mongodb+srv://eppalapallysharath:XfFJjR1YGh3uP3HK@cluster0.oxumile.mongodb.net/";
+// const uri = "mongodb://localhost:27017/"
 async function connectDB() {
   try {
-    await mongoose.connect("mongodb://localhost:27017/", {
+    await mongoose.connect(uri, {
       dbName: "simple_todo_db",
     });
 
